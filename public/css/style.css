@@ -624,6 +624,11 @@ img{
 	padding: 5px 0;
 }
 
+.main-header .logo-box img,
+.main-footer .about-widget .logo img{
+	border-radius: 10px;
+}
+
 .main-header .outer-box{
 	position: relative;
 	float: right;

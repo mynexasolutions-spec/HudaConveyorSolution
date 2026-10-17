@@ -5,6 +5,12 @@ import { WhatsAppWidget } from "./whatsapp-widget";
 export const metadata: Metadata = {
   title: "All About Overhead Conveyors | Huda Conveyors Solution",
   description: "Huda Conveyors Solution is a leading manufacturer and supplier of overhead conveyors, floor conveyors, and handling systems from Hapur, Uttar Pradesh, India.",
+  icons: {
+    icon: {
+      url: "/images/fevicon.jpeg",
+      type: "image/jpeg",
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
