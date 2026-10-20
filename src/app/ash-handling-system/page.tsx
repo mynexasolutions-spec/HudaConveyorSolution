@@ -1,6 +1,9 @@
+import { pageMetadata } from "../seo-data";
 import fs from "node:fs";
 import path from "node:path";
 import Script from "next/script";
+
+export const metadata = pageMetadata("ash-handling-system");
 
 export default function Page() {
   const html = fs.readFileSync(path.join(process.cwd(), "src/app/_ash-handling-system.html"), "utf8");

@@ -1958,7 +1958,7 @@ img{
 	position:relative;
 }
 
-.page-title h2{
+.page-title h2, .page-title h1 {
 	position:relative;
 	color:#ffffff;
 	font-size:48px;
@@ -2227,7 +2227,7 @@ img{
     transition-delay: 500ms;
 }
 
-.banner-section .swiper-slide h2{
+.banner-section .swiper-slide h2, .banner-section .swiper-slide h1 {
 	position: relative;
 	display: block;
 	font-size: 100px;
@@ -2247,7 +2247,7 @@ img{
 	transition: all 500ms ease;
 }
 
-.banner-section .swiper-slide-active h2{
+.banner-section .swiper-slide-active h2, .banner-section .swiper-slide-active h1 {
 	opacity: 1;
 	transform: scaleY(1);
 	-webkit-transition-delay: 750ms;
@@ -2647,7 +2647,7 @@ img{
 	transition-delay: 250ms;
 }
 
-.banner-section-two .slide-item h2{
+.banner-section-two .slide-item h2, .banner-section-two .slide-item h1{
 	position: relative;
 	display: block;
 	font-size: 64px;
@@ -2670,7 +2670,7 @@ img{
 	transition: all 500ms ease;
 }
 
-.banner-section-two .active h2{
+.banner-section-two .active h2, .banner-section-two .active h1{
 	opacity: 1;
 	-webkit-transform: translateY(0);
 	-moz-transform: translateY(0);
@@ -7072,9 +7072,17 @@ img{
 	line-height: 24px;
 	color: #ffffff;
 	font-weight: 400;
+	overflow-wrap: anywhere;
+	word-break: break-word;
+}
+
+.main-footer .contact-list li{
+	padding-right: 15px;
 }
 
 .main-footer .contact-list li .text a{
+	overflow-wrap: anywhere;
+	word-break: break-word;
 	color: #ffffff;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
@@ -10619,3 +10627,15 @@ img{
 
 
 
+
+/* Lightbox modal must sit above header, preloader and all page components */
+.fancybox-container{z-index:2147483000 !important;}
+.gallery-video-thumb{position:relative;display:block;}
+.gallery-video-thumb video{pointer-events:none;}
+.gallery-video-thumb .play-icon{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;text-align:center;line-height:64px;font-size:22px;}
+/* Gallery video modal: the <video> is a direct child of the slide, so drop fancybox's white box/padding and make it large */
+.fancybox-slide--video > video{width:min(94vw,1400px) !important;max-width:94vw !important;height:auto !important;max-height:86vh !important;padding:0 !important;margin:0 !important;background:#000 !important;object-fit:contain;outline:0;}
+
+/* Preloader never blocks the page for more than ~1s, even if scripts load slowly */
+.preloader{animation:preloader-hide .4s ease .6s forwards;}
+@keyframes preloader-hide{to{opacity:0;visibility:hidden;pointer-events:none;}}

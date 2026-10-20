@@ -56,7 +56,7 @@ export const SOLUTION_PAGES: Readonly<Record<SolutionPageKey, SolutionPage>> = {
     title: "Turnkey Industrial Solutions",
     breadcrumb: "TURN KEY SOLUTIONS",
     heading: "End-to-End Conveyor and Automation Projects",
-    image: "hero.png",
+    image: "hero.jpg",
     imageAlt: "Integrated industrial conveyor and automation system",
     paragraphs: [
       "Huda Conveyors Solution manages turnkey material-handling projects from requirement study and concept design through manufacturing, controls, installation, and commissioning.",

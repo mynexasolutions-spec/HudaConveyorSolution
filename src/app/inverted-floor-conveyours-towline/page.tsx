@@ -1,6 +1,9 @@
+import { pageMetadata } from "../seo-data";
 import fs from "node:fs";
 import path from "node:path";
 import Script from "next/script";
+
+export const metadata = pageMetadata("inverted-floor-conveyours-towline");
 
 export default function Page() {
   const html = fs.readFileSync(path.join(process.cwd(), "src/app/_inverted-floor-conveyours-towline.html"), "utf8");

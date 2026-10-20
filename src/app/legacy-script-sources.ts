@@ -1,0 +1,16 @@
+﻿export const LEGACY_SCRIPT_SOURCES: readonly string[] = [
+  "/js/jquery.js",
+  "/js/popper.min.js",
+  "/js/bootstrap.min.js",
+  "/js/owl.js",
+  "/js/wow.js",
+  "/js/appear.js",
+  "/js/jquery.stellar.min.js",
+  "/js/jquery.fancybox.js?v=2",
+  "/js/mixitup.js",
+  "/js/jquery.mCustomScrollbar.concat.min.js",
+  "/js/swiper.min.js",
+  "/js/TweenMax.min.js",
+  "/js/script.js?v=3",
+  "/js/whatsapp-form.js",
+];

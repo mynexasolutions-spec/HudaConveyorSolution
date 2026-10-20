@@ -558,10 +558,12 @@
 	}
 
 	//LightBox / Fancybox
+	if($.fancybox && $.fancybox.defaults) { $.fancybox.defaults.hash = false; }
 	if($('.lightbox-image').length) {
 		$('.lightbox-image').fancybox({
 			openEffect  : 'fade',
 			closeEffect : 'fade',
+			hash        : false,
 			helpers : {
 				media : {}
 			}

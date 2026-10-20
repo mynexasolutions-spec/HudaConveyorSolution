@@ -4,7 +4,11 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  outputFileTracingRoot: "C:/Users/KIIT/Desktop/Nexa_Soln/Project-24",
+  async redirects() {
+    return [
+      { source: "/product", destination: "/overhead-conveyors", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

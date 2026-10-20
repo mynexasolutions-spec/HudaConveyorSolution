@@ -1,4 +1,6 @@
-const WHATSAPP_CHAT_URL: string = "https://wa.me/919891137368";
+const WHATSAPP_MESSAGE: string =
+  "Hello Huda Conveyors Solution, I visited your website and I am interested in your conveyor solutions. Please share details and a quotation.";
+const WHATSAPP_CHAT_URL: string = `https://wa.me/919891137368?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 export function WhatsAppWidget() {
   return (

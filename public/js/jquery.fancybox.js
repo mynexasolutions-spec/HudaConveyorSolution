@@ -2367,7 +2367,11 @@
             self.trigger( 'afterShow' );
 
             // Play first html5 video/audio
-            current.$slide.find( 'video,audio' ).first().trigger( 'play' );
+            var media = current.$slide.find( 'video,audio' ).first()[0];
+            if ( media && media.play ) {
+                var playing = media.play();
+                if ( playing && playing.catch ) { playing.catch( function () {} ); }
+            }
 
             // Try to focus on the first focusable element
             if ( $( document.activeElement ).is( '[disabled]' ) || ( current.opts.autoFocus && !( current.type == 'image' || current.type === 'iframe' ) ) ) {
