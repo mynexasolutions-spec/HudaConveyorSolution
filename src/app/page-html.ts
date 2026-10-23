@@ -143,3 +143,12 @@ function readDetailPageHtml(detailPage: DetailPageData): string {
 export function readSolutionPageHtml(solutionKey: SolutionPageKey): string {
   return readDetailPageHtml(SOLUTION_PAGES[solutionKey]);
 }
+
+export function readStaticPageHtml(fileName: string): string {
+  const templateHtml: string = readAppFile(fileName);
+  if (CUSTOMERS_SECTION_PATTERN.test(templateHtml)) {
+    return replaceCustomersSection(templateHtml, fileName);
+  }
+  return templateHtml;
+}
+

@@ -8,7 +8,7 @@ export default function Page() {
   const html: string = readPageHtml("_body.html");
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />
       <LegacyScripts />
     </>
   );

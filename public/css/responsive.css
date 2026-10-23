@@ -387,6 +387,12 @@
 		padding: 0;
 		box-shadow: none;
 		background-color: transparent;
+		white-space: normal;
+		flex-wrap: wrap;
+	}
+
+	.about-us .about-years h3{
+		white-space: normal;
 	}
 
 	.about-us .image-column .image{

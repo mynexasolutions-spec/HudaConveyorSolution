@@ -8,7 +8,7 @@ export default function Page() {
   const html: string = readSolutionPageHtml("coal-handling");
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />
       <LegacyScripts />
     </>
   );

@@ -22,12 +22,12 @@ export const SEO_PAGES: Readonly<Record<string, SeoPage>> = {
   "": {
     title: "Overhead Conveyor Manufacturer in India",
     description:
-      "Huda Conveyors Solution (Anoopshahar, Bulandshahr, UP) manufactures overhead conveyors, belt conveyors, roller conveyors, chain conveyors and turnkey plants since 2008.",
+      "Huda Conveyors Solution (Anoopshahar, Bulandshahr, UP) manufactures overhead conveyors, belt conveyors, roller conveyors, chain conveyors and turnkey plants with 25+ years of engineering excellence.",
   },
   about: {
     title: "About Us",
     description:
-      "Huda Conveyors Solution, previously Huda Engineering, has built industrial overhead and floor conveyor systems since 2008. Learn about our team and capabilities.",
+      "Huda Conveyors Solution, previously Huda Engineering, has built industrial overhead and floor conveyor systems backed by 25+ years of engineering excellence. Learn about our team and capabilities.",
   },
   blog: {
     title: "Conveyor Blog & Industry Articles",

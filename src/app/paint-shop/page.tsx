@@ -8,7 +8,7 @@ export default function Page() {
   const html: string = readSolutionPageHtml("paint-shop");
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />
       <LegacyScripts />
     </>
   );
