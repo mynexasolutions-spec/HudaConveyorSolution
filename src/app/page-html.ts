@@ -55,14 +55,8 @@ function readAppFile(fileName: string): string {
   return replaceCategoryNavigationLinks(html);
 }
 
-function replaceCustomersSection(templateHtml: string, templateFile: string): string {
-  const customersHtml: string = readAppFile("_customers.html").trim();
-
-  if (!CUSTOMERS_SECTION_PATTERN.test(templateHtml)) {
-    throw new Error(`Customer section was not found in page template: ${templateFile}`);
-  }
-
-  return templateHtml.replace(CUSTOMERS_SECTION_PATTERN, customersHtml);
+function replaceCustomersSection(templateHtml: string, _templateFile?: string): string {
+  return templateHtml.replace(CUSTOMERS_SECTION_PATTERN, "");
 }
 
 function renderList(items: readonly string[]): string {
