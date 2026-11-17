@@ -526,7 +526,7 @@
 }
 
 .benefitsPanel h2 {
-  color: var(--detail-white);
+  color: var(--detail-white) !important;
 }
 
 .benefitsPanel .eyebrow {
