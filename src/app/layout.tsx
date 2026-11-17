@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./inner-theme.css";
+import { SiteChrome } from "./site-chrome";
 import { WhatsAppWidget } from "./whatsapp-widget";
 import { LEGACY_SCRIPT_SOURCES } from "./legacy-script-sources";
 import {
@@ -113,7 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body suppressHydrationWarning>
-        {children}
+        <SiteChrome>{children}</SiteChrome>
         <WhatsAppWidget />
       </body>
     </html>

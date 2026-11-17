@@ -1,0 +1,32 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "src/app/home.module.css"
+        ],
+        "createdAt": "2026-11-17T09:51:32.972Z",
+        "reason": "Codex: the cited 3px stripe is an intentional bottom hover indicator for product images, not a side-tab card border."
+      },
+      {
+        "rule": "border-accent-on-rounded",
+        "value": "*",
+        "files": [
+          "src/app/globals.css"
+        ],
+        "createdAt": "2026-11-17T09:51:34.070Z",
+        "reason": "Codex: these transparent/white borders form the speech-bubble pointer for the floating label, not an accent border on a rounded card."
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-11-17T10:12:22.407Z",
+        "reason": "Codex: Roboto is the project's explicitly loaded body/UI font and is used consistently across the established site design system."
+      }
+    ]
+  }
+}

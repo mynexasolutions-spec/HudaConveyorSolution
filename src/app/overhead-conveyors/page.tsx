@@ -1,15 +1,9 @@
 import { pageMetadata } from "../seo-data";
-import { LegacyScripts } from "../legacy-scripts";
-import { readProductCategoryHtml } from "../page-html";
+import { ConveyorDetailPage } from "../conveyor-detail-page";
+import { CONVEYOR_DETAILS } from "../conveyor-detail-data";
 
 export const metadata = pageMetadata("overhead-conveyors");
 
 export default function Page() {
-  const html: string = readProductCategoryHtml("overhead");
-  return (
-    <>
-      <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />
-      <LegacyScripts />
-    </>
-  );
+  return <ConveyorDetailPage product={CONVEYOR_DETAILS.overhead} />;
 }

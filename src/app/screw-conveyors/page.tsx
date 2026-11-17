@@ -1,15 +1,9 @@
 import { pageMetadata } from "../seo-data";
-import { LegacyScripts } from "../legacy-scripts";
-import { readStaticPageHtml } from "../page-html";
+import { ConveyorDetailPage } from "../conveyor-detail-page";
+import { CONVEYOR_DETAILS } from "../conveyor-detail-data";
 
 export const metadata = pageMetadata("screw-conveyors");
 
 export default function Page() {
-  const html: string = readStaticPageHtml("_screw-conveyors.html");
-  return (
-    <>
-      <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />
-      <LegacyScripts />
-    </>
-  );
+  return <ConveyorDetailPage product={CONVEYOR_DETAILS.screw} />;
 }

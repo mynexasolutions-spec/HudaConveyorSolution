@@ -1,0 +1,479 @@
+/* Shared theme for legacy inner pages. Scoped so the homepage is untouched. */
+
+.huda-inner-content {
+  background-color: #ffffff;
+  color: #14201a;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.huda-inner-content *,
+.huda-inner-content *::before,
+.huda-inner-content *::after {
+  box-sizing: border-box;
+}
+
+.huda-inner-content h1,
+.huda-inner-content h2,
+.huda-inner-content h3,
+.huda-inner-content h4,
+.huda-inner-content h5,
+.huda-inner-content h6 {
+  margin-top: 0;
+  color: #14201a !important;
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+.huda-inner-content p,
+.huda-inner-content li,
+.huda-inner-content .text,
+.huda-inner-content .text-box {
+  color: #5d6b62;
+}
+
+.huda-inner-content a {
+  color: #2f7a3f;
+}
+
+.huda-inner-content a:hover {
+  color: #66c93c;
+}
+
+.huda-inner-content strong,
+.huda-inner-content b {
+  color: #14201a;
+}
+
+.huda-inner-content .auto-container {
+  width: 100%;
+  max-width: 1240px;
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
+/* Page banners */
+
+.huda-inner-content .page-title {
+  position: relative;
+  padding: 170px 0 118px;
+  background-color: #0b2416 !important;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.huda-inner-content .page-title.product-category-title,
+.huda-inner-content .page-title.contact-page-title {
+  height: 390px;
+  padding: 0;
+}
+
+.huda-inner-content .page-title::before {
+  background: linear-gradient(
+    90deg,
+    rgba(6, 24, 14, 0.94) 0%,
+    rgba(6, 24, 14, 0.82) 55%,
+    rgba(6, 24, 14, 0.6) 100%
+  ) !important;
+}
+
+.huda-inner-content .page-title h1,
+.huda-inner-content .page-title h2 {
+  color: #ffffff !important;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  text-transform: none;
+}
+
+.huda-inner-content .page-breadcrumb li,
+.huda-inner-content .page-breadcrumb li a {
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-family: "Rajdhani", "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.huda-inner-content .page-breadcrumb li a:hover {
+  color: #7ed956 !important;
+}
+
+/* Blog banner heading needs a light foreground over its dark image treatment. */
+
+.huda-inner-content .banner-section-two .slide-item h2,
+.huda-inner-content .banner-section-two .slide-item h2 span {
+  color: #ffffff !important;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.48);
+}
+
+.huda-inner-content .banner-section-two .slide-item h2 span.theme_color {
+  color: #7ed956 !important;
+}
+
+/* Section backgrounds */
+
+.huda-inner-content section:not(.page-title):not(.banner-section-two) {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+.huda-inner-content .contact-info-section {
+  background: #0b2416 !important;
+}
+
+.huda-inner-content .contact-info-section::before {
+  background: transparent !important;
+}
+
+.huda-inner-content .contact-info-section .title {
+  color: #7ed956 !important;
+}
+
+.huda-inner-content .contact-info-section h2,
+.huda-inner-content .contact-info-section .number {
+  color: #ffffff !important;
+}
+
+.huda-inner-content .contact-info-section .number a {
+  color: #7ed956 !important;
+}
+
+.huda-inner-content .contact-info-section p,
+.huda-inner-content .contact-info-section li {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+/* Cards and panels */
+
+.huda-inner-content .welcome-section .column .inner-column,
+.huda-inner-content .welcome-section .column .lower-content,
+.huda-inner-content .feature-block-two .inner-box,
+.huda-inner-content .service-block .inner-box,
+.huda-inner-content .service-block-two .inner-box,
+.huda-inner-content .team-block .inner-box,
+.huda-inner-content .testimonial-block .inner-box,
+.huda-inner-content .news-block .lower-content,
+.huda-inner-content .request-form,
+.huda-inner-content .contact-form,
+.huda-inner-content .sidebar-widget,
+.huda-inner-content .accordion-box .block .acc-btn,
+.huda-inner-content .shop-single .product-details .prod-tabs .tabs-content .tab .content,
+.huda-inner-content .shop-single .product-details .prod-tabs .tab-btns .tab-btn,
+.huda-inner-content .shop-single .product-details .prod-tabs .tab-btns .tab-btn.active-btn,
+.huda-inner-content .styled-pagination li a,
+.huda-inner-content .tag-list li a,
+.huda-inner-content .comments-area .comment,
+.huda-inner-content .blog-single .post-share-options,
+.huda-inner-content .sidebar .blog-categories {
+  background-color: #ffffff !important;
+  color: #14201a !important;
+  border: 1px solid #e2e9e3;
+  box-shadow: 0 12px 32px rgba(9, 31, 18, 0.06);
+}
+
+.huda-inner-content .welcome-section .column .lower-content {
+  border-radius: 0 0 6px 6px;
+}
+
+.huda-inner-content .sidebar-widget {
+  border-radius: 6px;
+}
+
+.huda-inner-content .about-us .about-years,
+.huda-inner-content .about-us .about-years h2,
+.huda-inner-content .about-us .about-years span {
+  color: #ffffff !important;
+}
+
+.huda-inner-content .about-us .about-years {
+  background-color: #0b2416 !important;
+  border: 0;
+}
+
+.huda-inner-content .about-us .about-years span {
+  color: #7ed956 !important;
+}
+
+/* Product detail tabs */
+
+.huda-inner-content .shop-single .product-details .prod-tabs .tab-btns .tab-btn {
+  border: 1px solid #e2e9e3;
+  border-radius: 4px;
+  color: #14201a !important;
+  font-family: "Rajdhani", "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.huda-inner-content .shop-single .product-details .prod-tabs .tab-btns .tab-btn.active-btn {
+  background-color: #0b2416 !important;
+  color: #ffffff !important;
+  border-color: #0b2416;
+  box-shadow: none;
+}
+
+.huda-inner-content .shop-single .product-details .prod-tabs .tabs-content .tab .content {
+  border-radius: 0 0 6px 6px;
+  box-shadow: none;
+}
+
+/* Sidebar category list */
+
+.huda-inner-content .sidebar-widget.categories {
+  padding: 16px;
+}
+
+.huda-inner-content .cat-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.huda-inner-content .cat-list li {
+  border-bottom: 1px solid #eef3ee;
+}
+
+.huda-inner-content .cat-list li:last-child {
+  border-bottom: 0;
+}
+
+.huda-inner-content .float-text {
+  display: none !important;
+}
+
+/* Section headings: keep legacy reveal transforms from hiding or clipping text. */
+
+.huda-inner-content .sec-title h2 {
+  max-width: 100%;
+  line-height: 1.24;
+  letter-spacing: 0;
+  overflow-wrap: break-word;
+  transform: none !important;
+}
+
+.huda-inner-content .sec-title h2 span {
+  color: #7ed956 !important;
+}
+
+.huda-inner-content .sec-title .text {
+  margin-top: 14px;
+}
+
+.huda-inner-content .cat-list li a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 4px;
+  background-color: transparent !important;
+  color: #26332b !important;
+  font-family: "Rajdhani", "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  box-shadow: none;
+}
+
+.huda-inner-content .cat-list li a:hover {
+  background-color: #eaf7e3;
+  color: #2f7a3f !important;
+}
+
+/* Forms */
+
+.huda-inner-content input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]),
+.huda-inner-content textarea,
+.huda-inner-content select {
+  background-color: #ffffff !important;
+  color: #14201a !important;
+  border: 1px solid #dbe5dc !important;
+  border-radius: 4px;
+  box-shadow: none !important;
+}
+
+.huda-inner-content input::placeholder,
+.huda-inner-content textarea::placeholder {
+  color: #8a988f !important;
+}
+
+.huda-inner-content .theme-btn,
+.huda-inner-content button[type="submit"],
+.huda-inner-content input[type="submit"] {
+  background-color: #7ed956 !important;
+  color: #0b2416 !important;
+  border: 0 !important;
+  border-radius: 4px !important;
+  font-family: "Rajdhani", "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background-color 160ms ease;
+}
+
+.huda-inner-content .theme-btn:hover,
+.huda-inner-content button[type="submit"]:hover,
+.huda-inner-content input[type="submit"]:hover {
+  background-color: #66c93c !important;
+  color: #0b2416 !important;
+}
+
+/* Gallery filters and cards */
+
+.huda-inner-content .project-section-two .filters li {
+  background-color: #ffffff !important;
+  color: #26332b !important;
+  border: 1px solid #e2e9e3;
+  border-radius: 4px;
+  font-family: "Rajdhani", "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.huda-inner-content .project-section-two .filters .filter.active {
+  background-color: #0b2416 !important;
+  color: #ffffff !important;
+  border-color: #0b2416;
+  box-shadow: none;
+}
+
+.huda-inner-content .project-block-two .image-box .image {
+  background-color: #f4f8f3 !important;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.huda-inner-content .project-block-two img {
+  border-radius: 6px;
+}
+
+.huda-inner-content .project-block-two .image-box img {
+  opacity: 1 !important;
+  filter: none !important;
+  transition: transform 280ms ease, filter 280ms ease;
+}
+
+.huda-inner-content .project-block-two .image-box:hover img {
+  filter: saturate(1.06) contrast(1.03) !important;
+  transform: scale(1.025);
+}
+
+.huda-inner-content .project-block-two .caption-box {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 20px;
+  background: linear-gradient(0deg, rgba(8, 39, 25, 0.92), rgba(8, 39, 25, 0));
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+
+.huda-inner-content .project-block-two .image-box:hover .caption-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.huda-inner-content .project-block-two .caption-box::before,
+.huda-inner-content .project-block-two .caption-box::after {
+  display: none;
+}
+
+.huda-inner-content .project-block-two .caption-box h3,
+.huda-inner-content .project-block-two .image-box:hover .caption-box h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  opacity: 1;
+  color: #ffffff !important;
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Blog listing */
+
+.huda-inner-content .news-block .inner-box {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.huda-inner-content .news-block .inner-box .image {
+  background-color: #f4f8f3 !important;
+}
+
+.huda-inner-content .news-block .post-info li {
+  background-color: #eaf7e3 !important;
+  color: #2f7a3f !important;
+  border-radius: 3px;
+}
+
+.huda-inner-content .news-block .post-info li a {
+  color: #2f7a3f !important;
+}
+
+.huda-inner-content .news-block .lower-content h3 a,
+.huda-inner-content .news-block .lower-content h3 {
+  color: #14201a !important;
+}
+
+.huda-inner-content .news-block .lower-content h3 a:hover {
+  color: #2f7a3f !important;
+}
+
+/* Contact page */
+
+.huda-inner-content .contact-page-section .contact-info li {
+  background-color: #ffffff;
+  border: 1px solid #e2e9e3;
+  border-radius: 6px;
+  box-shadow: 0 10px 26px rgba(9, 31, 18, 0.05);
+}
+
+.huda-inner-content .contact-page-section .contact-info li .icon {
+  background-color: #eaf7e3 !important;
+  color: #2f7a3f !important;
+}
+
+.huda-inner-content .contact-page-section .contact-info li strong {
+  color: #14201a !important;
+}
+
+.huda-inner-content .contact-page-section .contact-info li p,
+.huda-inner-content .contact-page-section .contact-info li a {
+  color: #5d6b62 !important;
+}
+
+.huda-inner-content .contact-page-section .contact-info li a:hover {
+  color: #2f7a3f !important;
+}
+
+.huda-inner-content .map-section img,
+.huda-inner-content .map-outer iframe {
+  border-radius: 6px;
+}
+
+/* Small screens */
+
+@media (max-width: 620px) {
+  .huda-inner-content .auto-container {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .huda-inner-content .page-title,
+  .huda-inner-content .page-title.product-category-title,
+  .huda-inner-content .page-title.contact-page-title {
+    height: auto;
+    padding: 120px 0 78px;
+  }
+
+  .huda-inner-content .page-title h1,
+  .huda-inner-content .page-title h2 {
+    font-size: clamp(1.9rem, 8vw, 2.4rem);
+  }
+}

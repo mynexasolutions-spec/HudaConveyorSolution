@@ -59,6 +59,36 @@ function replaceCustomersSection(templateHtml: string, _templateFile?: string): 
   return templateHtml.replace(CUSTOMERS_SECTION_PATTERN, "");
 }
 
+function extractLegacyContent(html: string): string {
+  const mainMatch: RegExpMatchArray | null = html.match(
+    /<main\b[^>]*>([\s\S]*?)<\/main>/i,
+  );
+  const content: string = mainMatch ? mainMatch[1] : html;
+
+  return content
+    .replace(
+      /<header\b[^>]*class="[^"]*main-header[^"]*"[^>]*>[\s\S]*?<\/header>/gi,
+      "",
+    )
+    .replace(
+      /<footer\b[^>]*class="[^"]*main-footer[^"]*"[^>]*>[\s\S]*?<\/footer>/gi,
+      "",
+    )
+    .replace(
+      /<span\b[^>]*class="[^"]*header-span[^"]*"[^>]*>\s*<\/span>/gi,
+      "",
+    )
+    .replace(
+      /<div\b[^>]*class="[^"]*search-popup[^"]*"[^>]*>[\s\S]*?<\/form>\s*<\/div>/gi,
+      "",
+    )
+    .replace(
+      /<div\b[^>]*class="[^"]*scroll-to-top[^"]*"[^>]*>[\s\S]*?<\/div>/gi,
+      "",
+    )
+    .trim();
+}
+
 function renderList(items: readonly string[]): string {
   return items.map((item: string) => `<li>${item}</li>`).join("\n");
 }
@@ -117,7 +147,7 @@ function renderCategoryContent(category: DetailPageData): string {
 
 export function readPageHtml(templateFile: PageTemplateFile): string {
   const templateHtml: string = readAppFile(templateFile);
-  return replaceCustomersSection(templateHtml, templateFile);
+  return extractLegacyContent(replaceCustomersSection(templateHtml, templateFile));
 }
 
 export function readProductCategoryHtml(categoryKey: ProductCategoryKey): string {
@@ -131,7 +161,7 @@ function readDetailPageHtml(detailPage: DetailPageData): string {
     .replace(PAGE_TITLE_PATTERN, renderCategoryTitle(detailPage))
     .replace(CONTENT_SIDE_PATTERN, renderCategoryContent(detailPage));
 
-  return replaceCustomersSection(templateHtml, templateFile);
+  return extractLegacyContent(replaceCustomersSection(templateHtml, templateFile));
 }
 
 export function readSolutionPageHtml(solutionKey: SolutionPageKey): string {
@@ -141,8 +171,8 @@ export function readSolutionPageHtml(solutionKey: SolutionPageKey): string {
 export function readStaticPageHtml(fileName: string): string {
   const templateHtml: string = readAppFile(fileName);
   if (CUSTOMERS_SECTION_PATTERN.test(templateHtml)) {
-    return replaceCustomersSection(templateHtml, fileName);
+    return extractLegacyContent(replaceCustomersSection(templateHtml, fileName));
   }
-  return templateHtml;
+  return extractLegacyContent(templateHtml);
 }
 
