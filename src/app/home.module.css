@@ -1785,108 +1785,6 @@
 }
 
 /* ================================
-   Clients
-   ================================ */
-
-.clients {
-  padding: 52px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.clientsLabel {
-  margin-bottom: 26px;
-  text-align: center;
-  color: var(--muted);
-  font-family: "Rajdhani", "Roboto", sans-serif;
-  font-size: 12.5px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.clientsViewport {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 4px 0;
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    transparent,
-    #000 7%,
-    #000 93%,
-    transparent
-  );
-  mask-image: linear-gradient(
-    90deg,
-    transparent,
-    #000 7%,
-    #000 93%,
-    transparent
-  );
-}
-
-.clientsTrack {
-  display: flex;
-  width: max-content;
-  align-items: center;
-  animation: clientsMarquee 38s linear infinite;
-  will-change: transform;
-}
-
-.clientsGroup {
-  display: flex;
-  flex: none;
-  align-items: center;
-  gap: 48px;
-  padding-right: 48px;
-}
-
-.clientLogo {
-  display: flex;
-  width: 154px;
-  height: 72px;
-  flex: 0 0 154px;
-  align-items: center;
-  justify-content: center;
-}
-
-.clientLogo img {
-  display: block;
-  width: 148px;
-  height: 62px;
-  max-width: 148px;
-  max-height: 62px;
-  object-fit: contain;
-  filter: none;
-  opacity: 1;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .clientsViewport {
-    overflow-x: auto;
-    -webkit-mask-image: none;
-    mask-image: none;
-    scrollbar-width: thin;
-  }
-
-  .clientsTrack {
-    animation: none;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes clientsMarquee {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
-/* ================================
    Testimonials
    ================================ */
 
@@ -2967,24 +2865,6 @@
 
   .industryGrid {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .clientsGroup {
-    gap: 24px;
-    padding-right: 24px;
-  }
-
-  .clientLogo {
-    width: 126px;
-    height: 62px;
-    flex-basis: 126px;
-  }
-
-  .clientLogo img {
-    width: 120px;
-    height: 54px;
-    max-width: 120px;
-    max-height: 54px;
   }
 
   .formGrid {

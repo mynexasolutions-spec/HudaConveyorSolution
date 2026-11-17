@@ -166,26 +166,6 @@ const INDUSTRIES: readonly { readonly name: string; readonly icon: string }[] = 
   { name: "Coal and Minerals", icon: "/images/icon11.svg" },
 ];
 
-const CLIENTS: readonly string[] = [
-  "/images/client1.JPG",
-  "/images/client2.jpg",
-  "/images/client3.jpg",
-  "/images/client4.jpg",
-  "/images/client5.jpg",
-  "/images/client6.jpg",
-  "/images/client7.jpg",
-  "/images/client8.jpg",
-  "/images/client9.jpg",
-  "/images/client10.jpg",
-  "/images/client11.jpg",
-  "/images/client12.jpg",
-  "/images/client13.jpg",
-  "/images/client15.jpg",
-  "/images/client16.png",
-  "/images/client17.jpg",
-  "/images/client18.jpg",
-];
-
 const TESTIMONIALS: readonly Testimonial[] = [
   {
     quote:
@@ -457,35 +437,6 @@ export function HomePage() {
                   <span>{industry.name}</span>
                 </a>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section className={styles.clients}>
-          <div className={styles.container}>
-            <p className={styles.clientsLabel}>
-              Trusted by manufacturers and processors across India
-            </p>
-            <div className={styles.clientsViewport} aria-label="Huda Conveyors client logos">
-              <div className={styles.clientsTrack}>
-                {[0, 1].map((copy) => (
-                  <div
-                    className={styles.clientsGroup}
-                    key={copy}
-                    aria-hidden={copy === 1}
-                  >
-                    {CLIENTS.map((client, index) => (
-                      <span className={styles.clientLogo} key={`${copy}-${client}`}>
-                        <img
-                          src={client}
-                          alt={copy === 0 ? `Huda Conveyors client ${index + 1}` : ""}
-                          loading="lazy"
-                        />
-                      </span>
-                    ))}
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </section>
