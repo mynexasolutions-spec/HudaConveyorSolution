@@ -29,11 +29,6 @@ export const SEO_PAGES: Readonly<Record<string, SeoPage>> = {
     description:
       "Huda Conveyors Solution, previously Huda Engineering, has built industrial overhead and floor conveyor systems backed by 14+ years of engineering excellence. Learn about our team and capabilities.",
   },
-  blog: {
-    title: "Conveyor Blog & Industry Articles",
-    description:
-      "Read guides on how conveyor belts work, top belt conveyor companies in India and material handling tips from Huda Conveyors Solution.",
-  },
   gallery: {
     title: "Project Gallery - Conveyor Photos & Videos",
     description:

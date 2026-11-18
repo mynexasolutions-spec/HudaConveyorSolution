@@ -75,6 +75,5 @@ export const FOOTER_COMPANY: readonly SiteLink[] = [
   { label: "About Us", href: "/about" },
   { label: "Products", href: "/#products" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];

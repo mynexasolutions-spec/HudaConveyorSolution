@@ -46,7 +46,7 @@ export default function NotFound() {
       </div>
 
       <div className={styles.links}>
-        <a href="/about">About</a>·<a href="/gallery">Gallery</a>·<a href="/blog">Blog</a>·
+        <a href="/about">About</a>·<a href="/gallery">Gallery</a>·
         <a href="/contact">Contact</a>
       </div>
 

@@ -17,7 +17,6 @@
 .shop-item .lower-content .name a:hover,
 .comments-area .comment-box .reply-btn:hover,
 .comments-area .comment-box .rating,
-.blog-cat li a:before,
 .latest-news .post .post-info,
 .latest-news .post:hover h3 a,
 .main-footer .footer-bottom .footer-nav ul li a:hover,
@@ -30,7 +29,6 @@
 .styled-pagination li.active a,
 .error-section .sec-title h1,
 .author-box .social-icon li a:hover,
-.blog-single blockquote cite span,
 .news-block .lower-content h3 a:hover,
 .subscribe-form .upper-box h4 span,
 .testimonial-block .designation,
@@ -95,8 +93,6 @@ a{
 .range-slider-one .ui-widget-content .ui-state-default,
 .shop-item .overlay-box .btn-box a:hover,
 .main-footer .footer-column .widget-title:before,
-.blog-cat li.active a,
-.blog-cat li a:hover,
 .latest-news .post-thumb a:before,
 .testimonial-block .inner-box:before,
 .project-block-two .caption-box:before,
@@ -124,7 +120,6 @@ a{
 }
 
 /*Border Color*/
-.rtl .blog-single blockquote,
 .rtl .user-links li a,
 .rtl .subscribe-form .upper-box,
 .rtl .pricing-table .table-content ul li,
@@ -168,7 +163,6 @@ a{
 .user-links li a,
 .social-icon-two li a,
 .styled-pagination li a,
-.blog-single blockquote,
 .news-block .lower-content,
 .subscribe-form .form-group input:focus,
 .subscribe-form .form-group select:focus,

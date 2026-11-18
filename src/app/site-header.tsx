@@ -103,11 +103,6 @@ export function SiteHeader() {
                 </a>
               </li>
               <li className={styles.navItem}>
-                <a className={styles.navLink} href="/blog">
-                  Blog
-                </a>
-              </li>
-              <li className={styles.navItem}>
                 <a className={styles.navLink} href="/contact">
                   Contact
                 </a>
@@ -170,9 +165,6 @@ export function SiteHeader() {
               </details>
               <a className={styles.mobileLink} href="/gallery">
                 Gallery
-              </a>
-              <a className={styles.mobileLink} href="/blog">
-                Blog
               </a>
               <a className={styles.mobileLink} href="/contact">
                 Contact

@@ -60,7 +60,6 @@
 		padding: 70px 0 0;
 	}
 
-	.blog-single, .blog-sidebar,
 	.sidebar-side .services-sidebar,
 	.contact-page-section .form-column .inner-column,
 	.about-me .image-column .image-box{
@@ -543,14 +542,6 @@
 		margin-top: 0;
 	}
 
-	.blog-single blockquote{
-		padding: 20px;
-	}
-
-	.blog-single blockquote cite span{
-		display: block;
-	}
-
 	.comments-area .comment-box .author-thumb{
 		position: relative;
 		display: inline-block;
@@ -623,10 +614,6 @@
 
 @media only screen and (max-width: 479px){
 
-	.blog-single .post-share-options .social-icon-two{
-		margin-top: 10px;
-	}
-
 	.latest-news .post{
 		padding-top: 0;
 	}
@@ -682,7 +669,6 @@
 		padding: 70px 0 0;
 	}
 
-	.rtl .blog-single, .blog-sidebar,
 	.rtl .sidebar-side .services-sidebar,
 	.rtl .contact-page-section .form-column .inner-column,
 	.rtl .about-me .image-column .image-box{
@@ -785,10 +771,6 @@
 
 	.rtl .project-detail .project-info{
 		padding: 40px 20px 20px;
-	}
-
-	.rtl .blog-single blockquote{
-		padding: 20px;
 	}
 
 	.rtl .comments-area .comment-box .author-thumb{

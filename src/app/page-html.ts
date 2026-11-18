@@ -13,7 +13,6 @@ import {
 export type PageTemplateFile =
   | "_body.html"
   | "_about.html"
-  | "_blog.html"
   | "_gallery.html"
   | "_contact.html";
 

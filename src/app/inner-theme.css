@@ -103,21 +103,9 @@
   color: #7ed956 !important;
 }
 
-/* Blog banner heading needs a light foreground over its dark image treatment. */
-
-.huda-inner-content .banner-section-two .slide-item h2,
-.huda-inner-content .banner-section-two .slide-item h2 span {
-  color: #ffffff !important;
-  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.48);
-}
-
-.huda-inner-content .banner-section-two .slide-item h2 span.theme_color {
-  color: #7ed956 !important;
-}
-
 /* Section backgrounds */
 
-.huda-inner-content section:not(.page-title):not(.banner-section-two) {
+.huda-inner-content section:not(.page-title) {
   background-color: #ffffff !important;
   background-image: none !important;
 }
@@ -167,9 +155,7 @@
 .huda-inner-content .shop-single .product-details .prod-tabs .tab-btns .tab-btn.active-btn,
 .huda-inner-content .styled-pagination li a,
 .huda-inner-content .tag-list li a,
-.huda-inner-content .comments-area .comment,
-.huda-inner-content .blog-single .post-share-options,
-.huda-inner-content .sidebar .blog-categories {
+.huda-inner-content .comments-area .comment {
   background-color: #ffffff !important;
   color: #14201a !important;
   border: 1px solid #e2e9e3;
@@ -368,8 +354,8 @@
   width: 100%;
   padding: 18px 20px;
   background: linear-gradient(0deg, rgba(8, 39, 25, 0.92), rgba(8, 39, 25, 0));
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: opacity 180ms ease, visibility 180ms ease;
 }
 
@@ -393,36 +379,6 @@
   font-family: "Oswald", "Roboto", sans-serif;
   font-size: 20px;
   line-height: 1.2;
-}
-
-/* Blog listing */
-
-.huda-inner-content .news-block .inner-box {
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.huda-inner-content .news-block .inner-box .image {
-  background-color: #f4f8f3 !important;
-}
-
-.huda-inner-content .news-block .post-info li {
-  background-color: #eaf7e3 !important;
-  color: #2f7a3f !important;
-  border-radius: 3px;
-}
-
-.huda-inner-content .news-block .post-info li a {
-  color: #2f7a3f !important;
-}
-
-.huda-inner-content .news-block .lower-content h3 a,
-.huda-inner-content .news-block .lower-content h3 {
-  color: #14201a !important;
-}
-
-.huda-inner-content .news-block .lower-content h3 a:hover {
-  color: #2f7a3f !important;
 }
 
 /* Contact page */
