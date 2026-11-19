@@ -332,6 +332,16 @@
   overflow: hidden;
 }
 
+.huda-inner-content .project-section-two .project-block-two .image-box {
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+}
+
+.huda-inner-content .project-section-two .project-block-two .image-box:hover {
+  box-shadow: 0 0 12px 2px rgba(110, 190, 75, 0.7) !important;
+  outline-color: #6ebe4b;
+}
+
 .huda-inner-content .project-block-two img {
   border-radius: 6px;
 }
@@ -379,6 +389,81 @@
   font-family: "Oswald", "Roboto", sans-serif;
   font-size: 20px;
   line-height: 1.2;
+}
+
+@media (max-width: 575px) {
+  .huda-inner-content .project-section-two {
+    padding: 34px 0 24px;
+  }
+
+  .huda-inner-content .project-section-two .auto-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .huda-inner-content .project-section-two .sec-title {
+    margin-bottom: 18px;
+    padding-top: 0;
+  }
+
+  .huda-inner-content .project-section-two .sec-title h2 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+
+  .huda-inner-content .project-section-two .filters {
+    margin-bottom: 22px;
+  }
+
+  .huda-inner-content .project-section-two .filters .filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .huda-inner-content .project-section-two .filters li {
+    display: block;
+    margin: 0 !important;
+    padding: 8px 11px !important;
+    font-size: 14px !important;
+    line-height: 1.2;
+  }
+
+  .huda-inner-content .project-section-two .filter-list.row {
+    margin-right: -6px;
+    margin-left: -6px;
+  }
+
+  .huda-inner-content .project-section-two .project-block-two {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    margin-bottom: 14px;
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .huda-inner-content .project-section-two .project-block-two .image-box .image,
+  .huda-inner-content .project-section-two .project-block-two .image-box img,
+  .huda-inner-content .project-section-two .project-block-two .image-box video {
+    height: 170px !important;
+    min-height: 170px;
+    object-fit: cover;
+  }
+
+  .huda-inner-content .project-section-two .project-block-two .caption-box {
+    padding: 9px 10px;
+  }
+
+  .huda-inner-content .project-section-two .project-block-two .caption-box h3,
+  .huda-inner-content .project-section-two .project-block-two .caption-box h3 a {
+    font-size: 12px;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
 }
 
 /* Contact page */
