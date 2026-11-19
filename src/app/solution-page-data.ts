@@ -138,7 +138,7 @@ export const SOLUTION_PAGES: Readonly<Record<SolutionPageKey, SolutionPage>> = {
     title: "PET Bottle Recycling Plant Manufacturers",
     breadcrumb: "PET BOTTLE RECYCLING PLANT",
     heading: "High-Capacity PET Bottle Washing & Polymer Recycling Plants",
-    image: "wire-mesh-belt-conveyor.jpg",
+    image: "wire-mesh-conveyor.jpg",
     imageAlt: "PET bottle recycling conveyor and processing system",
     paragraphs: [
       "Huda Conveyors Solution engineers and manufactures high-throughput PET bottle recycling and washing lines designed for automated sorting, label de-laminating, wet/dry granulating, multi-stage hot washing, centrifugal drying, and pneumatic transfer of post-consumer plastic bottles.",

@@ -3,7 +3,8 @@ export type ProductCategoryKey =
   | "belt"
   | "roller"
   | "chain"
-  | "other";
+  | "other"
+  | "sprockets-spare-parts";
 
 export type DetailPageData = {
   title: string;
@@ -54,11 +55,11 @@ export const PRODUCT_CATEGORIES: Readonly<Record<ProductCategoryKey, ProductCate
   belt: {
     title: "Belt Conveyor Manufacturers",
     breadcrumb: "BELT CONVEYORS",
-    heading: "Heavy-Duty Industrial Belt Conveyor Systems in India",
+    heading: "Heavy-Duty I-Beam Conveyor Systems in India",
     image: "belt-conveyor.jpg",
-    imageAlt: "Industrial belt conveyor system",
+    imageAlt: "I-Beam Conveyor system",
     paragraphs: [
-      "Huda Conveyors Solution is a premier manufacturer and supplier of heavy-duty industrial belt conveyor systems, delivering precision-engineered solutions for automated transfer of unit loads, packaged goods, cartons, and bulk materials across modern manufacturing and distribution facilities.",
+      "Huda Conveyors Solution is a premier manufacturer and supplier of heavy-duty I-Beam Conveyor systems, delivering precision-engineered solutions for automated transfer of unit loads, packaged goods, cartons, and bulk materials across modern manufacturing and distribution facilities.",
       "With over 14 years of engineering expertise, our belt conveyor systems are custom-fabricated in modular stainless steel, mild steel, and aluminum extruded profiles. Equipped with premium vulcanized rubber, PVC, PU, or modular plastic belting, variable-speed VFD drives, and adjustable side guides, our conveyors guarantee smooth transit, low energy consumption, and maximum operational uptime.",
     ],
     types: [
@@ -149,16 +150,15 @@ export const PRODUCT_CATEGORIES: Readonly<Record<ProductCategoryKey, ProductCate
     title: "Other Conveyor Solutions",
     breadcrumb: "OTHER CONVEYORS",
     heading: "Custom-Engineered Special Purpose Conveyor Solutions",
-    image: "wire-mesh-belt-conveyor.jpg",
+    image: "four-wheel-overhead-conveyor.jpg",
     imageAlt: "Special-purpose industrial conveyor",
     paragraphs: [
       "Huda Conveyors Solution provides custom-engineered special purpose conveyors and advanced material handling machinery designed for unique manufacturing processes and challenging operational envelopes.",
-      "From steep-angle vertical bucket elevators and sealed screw augers to high-temperature wire mesh ovens, spiral elevation towers, and mobile telescopic truck loaders, our engineering team custom-fabricates solutions tailored to your exact mechanical and environmental demands.",
+      "From steep-angle vertical bucket elevators and sealed screw augers to high-temperature process conveyors, spiral elevation towers, and mobile telescopic truck loaders, our engineering team custom-fabricates solutions tailored to your exact mechanical and environmental demands.",
     ],
     types: [
       "Continuous & Centrifugal Bucket Elevators",
       "Industrial Screw & Augur Bulk Conveyors",
-      "Stainless Steel Wire Mesh Belt Conveyors",
       "Compact Continuous Spiral Elevation Towers",
       "Mobile Telescopic Truck & Container Loaders",
       "Automated Scrap & Machine-Chip Evacuation Lines",
@@ -175,6 +175,38 @@ export const PRODUCT_CATEGORIES: Readonly<Record<ProductCategoryKey, ProductCate
       "Multi-Tier Warehouse Vertical Lift & Merging",
       "CNC Machine Tool Swarf & Scrap Evacuation",
       "Logistics Dock Loading & High-Speed Unloading",
+    ],
+  },
+  "sprockets-spare-parts": {
+    title: "Sprockets and Spare Parts",
+    breadcrumb: "SPROCKETS AND SPARE PARTS",
+    heading: "Sprockets and Spare Parts for Conveyor Systems",
+    image: "four-wheel-overhead-conveyor.jpg",
+    imageAlt: "Conveyor sprockets, spare parts and guide rollers",
+    paragraphs: [
+      "Huda Conveyors Solution supplies precision conveyor components, trolley assemblies and custom rigs for production lines that need reliable movement, accurate guidance and straightforward maintenance.",
+      "The range includes I-Beam Guide Rollers, sprockets and spare parts, along with custom attachments and replacement assemblies matched to your conveyor geometry and operating duty.",
+    ],
+    types: [
+      "Drive Unit Enclosed Track ST.",
+      "Road Wheels (OD 67 mm / ID 10 mm)",
+      "I-Beam Guide Rollers",
+      "Four-Wheel Conveyor Sprockets",
+      "I-Beam Trolleys",
+      "I-Beam Conveyor Chain",
+      "Custom Conveyor Attachments",
+    ],
+    features: [
+      "Replacement components matched to existing conveyor systems",
+      "Guide rollers, trolley assemblies and wear-part options",
+      "Custom rigs and attachments for unusual loads or routes",
+      "Practical access for inspection, replacement and servicing",
+    ],
+    applications: [
+      "Overhead conveyor maintenance and line extensions",
+      "Automotive, paint shop and finishing lines",
+      "Heavy component handling and assembly stations",
+      "Custom material handling fixtures and transfer points",
     ],
   },
 };

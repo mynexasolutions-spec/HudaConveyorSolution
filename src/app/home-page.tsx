@@ -111,12 +111,20 @@ const PRODUCTS: readonly Product[] = [
       "Reach into trucks and containers with adjustable loading systems that reduce manual handling.",
   },
   {
-    name: "Wire Mesh Belt Conveyors",
-    kicker: "Special Purpose",
-    href: "/wire-mesh-belt-conveyor",
-    image: "/images/wire-mesh-belt-conveyor.jpg",
+    name: "I-Beam Guide Rollers",
+    kicker: "Overhead Components",
+    href: "/sprockets-and-spare-parts",
+    image: "/images/four-wheel-conveyor-2.png",
     description:
-      "Open-mesh conveying for heat, washdown, cooling, drying and demanding process applications.",
+      "Precision guide rollers for smooth, stable movement through I-beam overhead conveyor routes.",
+  },
+  {
+    name: "Sprockets and Spare Parts",
+    kicker: "Conveyor Components",
+    href: "/sprockets-and-spare-parts",
+    image: "/gallery/photo4.jpeg",
+    description:
+      "Replacement sprockets, trolley components and purpose-built rigging for dependable conveyor service.",
   },
   {
     name: "Turnkey Conveyor Solutions",

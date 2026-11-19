@@ -47,6 +47,12 @@ export const PRODUCT_MENU: readonly MenuLink[] = [
     icon: "fas fa-cubes",
   },
   {
+    label: "Sprockets and Spare Parts",
+    href: "/sprockets-and-spare-parts",
+    description: "I-beam guide rollers and replacement components",
+    icon: "fas fa-cogs",
+  },
+  {
     label: "Turnkey Solutions",
     href: "/turn-key-solutions",
     description: "Complete plants, paint shops and towlines",
@@ -68,6 +74,7 @@ export const FOOTER_PRODUCTS: readonly SiteLink[] = [
   { label: "Roller Conveyors", href: "/roller-conveyors" },
   { label: "Chain Conveyors", href: "/chain-conveyors" },
   { label: "Other Conveyors", href: "/other-conveyors" },
+  { label: "Sprockets and Spare Parts", href: "/sprockets-and-spare-parts" },
   { label: "Turnkey Solutions", href: "/turn-key-solutions" },
 ];
 

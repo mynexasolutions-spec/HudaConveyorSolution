@@ -29,7 +29,6 @@ export type ConveyorDetailKey =
   | "bucket"
   | "spiral"
   | "telescopic"
-  | "wire-mesh"
   | "turnkey";
 
 export const CONVEYOR_DETAILS: Readonly<Record<ConveyorDetailKey, ConveyorDetail>> = {
@@ -82,7 +81,7 @@ export const CONVEYOR_DETAILS: Readonly<Record<ConveyorDetailKey, ConveyorDetail
     summary:
       "Straight, inclined and long-run belt conveyors built around your product, throughput, transfer points and plant layout.",
     image: "/images/belt-conveyor.jpg",
-    imageAlt: "Industrial belt conveyor transporting material",
+    imageAlt: "I-Beam Conveyor transporting material",
     overviewImage: "/images/belt-conveyor.png",
     overviewImageAlt: "Belt conveyor frame and drive assembly",
     overviewTitle: "From cartons to bulk material, engineered for steady movement",
@@ -367,48 +366,6 @@ export const CONVEYOR_DETAILS: Readonly<Record<ConveyorDetailKey, ConveyorDetail
       "Improve loading consistency across changing trailer sizes",
       "Move more dispatch volume through the same dock",
       "Give operators a more controlled and ergonomic work position",
-    ],
-  },
-  "wire-mesh": {
-    category: "Process conveying",
-    name: "Wire Mesh Belt Conveyors",
-    heroTitle: "Open-mesh conveying for heat, air and washdown.",
-    summary:
-      "Durable wire mesh belt conveyors for heat treatment, drying, cooling, washing and process lines that need airflow or drainage.",
-    image: "/images/wire-mesh-belt-conveyor.jpg",
-    imageAlt: "Wire mesh belt conveyor for industrial processing",
-    overviewImage: "/images/about_conveyor_2.jpg",
-    overviewImageAlt: "Industrial conveyor fabrication and process equipment",
-    overviewTitle: "Let your process breathe while the product keeps moving",
-    overview: [
-      "The open construction of a wire mesh belt allows air, water and heat to pass through the product path. That makes it a strong fit for cooling, drying, washing and thermal process stages.",
-      "Huda Conveyors selects mesh, belt edge, frame, drive and support materials around operating temperature, product contact, cleaning method and the required dwell time.",
-    ],
-    process: [
-      { title: "Define the process", description: "We review temperature, airflow, washdown, product dimensions and dwell time across each zone." },
-      { title: "Choose the mesh", description: "Open area, wire size, belt edge and material are selected for product support and service life." },
-      { title: "Build the zones", description: "Supports, guides, drives, hoods, drains and access points are integrated into the line." },
-      { title: "Validate the treatment", description: "The conveyor is tested for tracking, exposure, drainage and repeatable product spacing." },
-    ],
-    features: [
-      "Balanced wire mesh belts with open-area options",
-      "Stainless-steel and heat-resistant construction choices",
-      "Washdown-friendly frames, drains and accessible guarding",
-      "Variable speed for controlled heat, air or cooling exposure",
-      "Custom curves, transfers and process enclosures",
-    ],
-    applications: [
-      "Heat treatment, baking and curing lines",
-      "Cooling, drying and dewatering stages",
-      "Food and beverage washdown areas",
-      "Metal finishing and component processing",
-      "Recycling and material preparation lines",
-    ],
-    benefits: [
-      "Improve airflow, drainage and process exposure around the product",
-      "Choose materials that match heat, moisture and cleaning conditions",
-      "Keep the belt accessible for inspection and washdown",
-      "Control dwell time with steady, adjustable movement",
     ],
   },
   turnkey: {
