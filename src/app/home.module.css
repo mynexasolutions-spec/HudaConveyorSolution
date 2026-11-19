@@ -2640,6 +2640,11 @@
 }
 
 @media (max-width: 620px) {
+  .home > .siteHeader + main,
+  .home > .siteHeader + .innerContent {
+    padding-top: 104px;
+  }
+
   .container {
     padding: 0 18px;
   }
