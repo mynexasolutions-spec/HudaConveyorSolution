@@ -84,3 +84,34 @@ export const FOOTER_COMPANY: readonly SiteLink[] = [
   { label: "Gallery", href: "/gallery" },
   { label: "Contact Us", href: "/contact" },
 ];
+
+// Pages rendered by React components (not the legacy HTML templates).
+// Links between these can use client-side navigation, which is much faster.
+export const REACT_ROUTES: ReadonlySet<string> = new Set<string>([
+  "/",
+  "/overhead-conveyors",
+  "/belt-conveyor",
+  "/roller-conveyors",
+  "/chain-conveyors",
+  "/i-beam-conveyor",
+  "/sprockets-spare-parts",
+  "/turn-key-solutions",
+  "/enclosed-overhead-conveyor",
+  "/four-wheel-overhead-conveyor",
+  "/beam-overhead-conveyors",
+  "/assembly-line-belt-conveyor",
+  "/cleated-belt-conveyor",
+  "/modular-belt-conveyor",
+  "/curve-belt-conveyor",
+  "/slat-conveyor",
+  "/inverted-floor-conveyours-towline",
+  "/incline-belt-conveyor",
+  "/troughed-belts-conveyor",
+  "/curved-roller-conveyor",
+  "/apron-conveyor",
+  "/drag-chain-conveyor",
+  "/screw-conveyors",
+  "/bucket-elevators",
+  "/spiral-conveyor",
+  "/telescopic-belt-conveyor",
+]);

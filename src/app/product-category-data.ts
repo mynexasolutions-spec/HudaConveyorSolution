@@ -60,7 +60,7 @@ export const PRODUCT_CATEGORIES: Readonly<Record<ProductCategoryKey, ProductCate
     imageAlt: "I-Beam Conveyor system",
     paragraphs: [
       "Huda Conveyors Solution is a premier manufacturer and supplier of heavy-duty I-Beam Conveyor systems, delivering precision-engineered solutions for automated transfer of unit loads, packaged goods, cartons, and bulk materials across modern manufacturing and distribution facilities.",
-      "With over 14 years of engineering expertise, our belt conveyor systems are custom-fabricated in modular stainless steel, mild steel, and aluminum extruded profiles. Equipped with premium vulcanized rubber, PVC, PU, or modular plastic belting, variable-speed VFD drives, and adjustable side guides, our conveyors guarantee smooth transit, low energy consumption, and maximum operational uptime.",
+      "Our belt conveyor systems are custom-fabricated in modular stainless steel, mild steel, and aluminum extruded profiles. Equipped with premium vulcanized rubber, PVC, PU, or modular plastic belting, variable-speed VFD drives, and adjustable side guides, our conveyors guarantee smooth transit, low energy consumption, and maximum operational uptime.",
     ],
     types: [
       "Heavy-Duty Flat Belt Conveyors",

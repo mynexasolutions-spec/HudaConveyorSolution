@@ -9,6 +9,7 @@ import {
   PHONE_HREF,
 } from "./site-data";
 import { MailIcon, PhoneIcon, PinIcon } from "./site-icons";
+import { SmartLink } from "./smart-link";
 
 export function SiteFooter() {
   return (
@@ -69,7 +70,7 @@ export function SiteFooter() {
             <ul className={styles.footerList}>
               {FOOTER_PRODUCTS.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href}>{item.label}</a>
+                  <SmartLink href={item.href}>{item.label}</SmartLink>
                 </li>
               ))}
             </ul>
@@ -80,7 +81,7 @@ export function SiteFooter() {
             <ul className={styles.footerList}>
               {FOOTER_COMPANY.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href}>{item.label}</a>
+                  <SmartLink href={item.href}>{item.label}</SmartLink>
                 </li>
               ))}
             </ul>

@@ -208,6 +208,16 @@
   box-shadow: none;
 }
 
+/* Solution and category pages: black body text instead of grey */
+
+.huda-inner-content .product-category-detail p,
+.huda-inner-content .product-category-detail li,
+.huda-inner-content .product-category-detail .text,
+.huda-inner-content .product-category-detail .content,
+.huda-inner-content .product-category-detail .list-style-two li {
+  color: #000000 !important;
+}
+
 /* Sidebar category list */
 
 .huda-inner-content .sidebar-widget.categories {
@@ -255,7 +265,7 @@
   padding: 10px 12px;
   border-radius: 4px;
   background-color: transparent !important;
-  color: #26332b !important;
+  color: #000000 !important;
   font-family: "Rajdhani", "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 600;

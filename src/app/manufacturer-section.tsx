@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./home.module.css";
 import { ArrowIcon, CheckIcon } from "./site-icons";
+import { SmartLink } from "./smart-link";
 
 type ManufacturerTab = {
   readonly id: string;
@@ -50,15 +51,6 @@ const MANUFACTURER_TABS: readonly ManufacturerTab[] = [
       "Clear decisions around safety, access and serviceability",
     ],
   },
-];
-
-const MANUFACTURER_STATS: readonly {
-  readonly value: string;
-  readonly label: string;
-}[] = [
-  { value: "14+", label: "Years of engineering" },
-  { value: "320+", label: "Systems installed" },
-  { value: "150+", label: "Industrial clients" },
 ];
 
 export function ManufacturerSection() {
@@ -115,17 +107,22 @@ export function ManufacturerSection() {
                 </li>
               ))}
             </ul>
-            <a className={styles.manufacturerLink} href="/about">
+            <SmartLink className={styles.manufacturerLink} href="/about">
               More about Huda Conveyors
               <ArrowIcon />
-            </a>
+            </SmartLink>
           </div>
         </div>
 
-        <div className={styles.manufacturerVisual} aria-label="Huda Conveyors company statistics">
-          <div className={styles.manufacturerTileStat}>
-            <strong>{MANUFACTURER_STATS[0].value}</strong>
-            <span>{MANUFACTURER_STATS[0].label}</span>
+        <div className={styles.manufacturerVisual} aria-label="Huda Conveyors manufacturing highlights">
+          <div className={styles.manufacturerTileImage}>
+            <Image
+              src="/images/about5.jpg"
+              alt="Automated industrial conveyor system manufactured by Huda Conveyors"
+              fill
+              sizes="(max-width: 820px) 50vw, 22vw"
+            />
+            <span>Custom engineering</span>
           </div>
 
           <div className={styles.manufacturerTileBrand}>
@@ -138,9 +135,14 @@ export function ManufacturerSection() {
             <span>Built in India</span>
           </div>
 
-          <div className={styles.manufacturerTileStat}>
-            <strong>{MANUFACTURER_STATS[1].value}</strong>
-            <span>{MANUFACTURER_STATS[1].label}</span>
+          <div className={styles.manufacturerTileImage}>
+            <Image
+              src="/images/about_conveyor_2.jpg"
+              alt="Roller and belt conveyor lines with automation in a factory"
+              fill
+              sizes="(max-width: 820px) 50vw, 22vw"
+            />
+            <span>Automation-ready lines</span>
           </div>
 
           <div className={`${styles.manufacturerTileImage} ${styles.manufacturerTileImageWide}`}>
@@ -153,9 +155,14 @@ export function ManufacturerSection() {
             <span>In-house fabrication</span>
           </div>
 
-          <div className={styles.manufacturerTileStat}>
-            <strong>{MANUFACTURER_STATS[2].value}</strong>
-            <span>{MANUFACTURER_STATS[2].label}</span>
+          <div className={styles.manufacturerTileImage}>
+            <Image
+              src="/images/belt-conveyor.jpg"
+              alt="Heavy-duty belt conveyor with drive drum and rollers"
+              fill
+              sizes="(max-width: 820px) 50vw, 22vw"
+            />
+            <span>Heavy-duty belt conveyors</span>
           </div>
 
           <div className={styles.manufacturerTileImage}>

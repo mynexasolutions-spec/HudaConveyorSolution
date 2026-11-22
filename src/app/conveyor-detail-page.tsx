@@ -76,10 +76,6 @@ export function ConveyorDetailPage({ product }: ConveyorDetailPageProps) {
                   sizes="(max-width: 900px) 52vw, 25vw"
                 />
               </div>
-              <div className={styles.imageNote}>
-                <strong>14+</strong>
-                <span>years of conveyor engineering</span>
-              </div>
             </div>
 
             <div className={styles.overviewCopy}>
@@ -99,6 +95,62 @@ export function ConveyorDetailPage({ product }: ConveyorDetailPageProps) {
           </div>
         </div>
       </section>
+
+      <section className={`${styles.section} ${styles.aboutSection}`} id="about-product">
+        <div className={styles.container}>
+          <div className={styles.aboutGrid}>
+            <div className={styles.aboutCopy}>
+              <span className={styles.eyebrow}>About the product</span>
+              <h2>{product.about.title}</h2>
+              {product.about.paragraphs.map((paragraph: string) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+
+            <div className={styles.whyPanel}>
+              <h3>{product.about.whyTitle}</h3>
+              <ol className={styles.whyList}>
+                {product.about.reasons.map((reason, index: number) => (
+                  <li key={reason.title}>
+                    <span className={styles.whyNumber}>0{index + 1}</span>
+                    <div>
+                      <strong>{reason.title}</strong>
+                      <p>{reason.description}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {product.relatedImages && product.relatedImages.length > 0 ? (
+        <section className={`${styles.section} ${styles.relatedSection}`} id="gallery">
+          <div className={styles.container}>
+            <div className={styles.sectionHeading}>
+              <div>
+                <span className={styles.eyebrow}>Related images</span>
+                <h2>{product.name}, in the field.</h2>
+              </div>
+              <p>A closer look at the equipment and components behind this system.</p>
+            </div>
+
+            <div className={styles.relatedGrid}>
+              {product.relatedImages.map((image) => (
+                <figure className={styles.relatedItem} key={image.src}>
+                  <div className={styles.relatedFrame}>
+                    {/* Shown at the file's own size so small photos are never upscaled or cropped. */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={image.src} alt={image.alt} loading="lazy" />
+                  </div>
+                  <figcaption>{image.caption}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className={`${styles.section} ${styles.sectionTinted}`} id="process">
         <div className={styles.container}>

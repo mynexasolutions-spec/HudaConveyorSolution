@@ -3,7 +3,6 @@ import "./globals.css";
 import "./inner-theme.css";
 import { SiteChrome } from "./site-chrome";
 import { WhatsAppWidget } from "./whatsapp-widget";
-import { LEGACY_SCRIPT_SOURCES } from "./legacy-script-sources";
 import {
   SITE_EMAIL,
   SITE_NAME,
@@ -99,9 +98,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
-        {LEGACY_SCRIPT_SOURCES.map((source: string) => (
-          <link key={source} rel="preload" as="script" href={source} />
-        ))}
         <link rel="stylesheet" href="/css/bootstrap.css" />
         <link rel="stylesheet" href="/css/style.css?v=2" />
         <link rel="stylesheet" href="/css/responsive.css" />

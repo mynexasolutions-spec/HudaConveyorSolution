@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./home.module.css";
 import { EnquiryForm } from "./enquiry-form";
 import {
@@ -16,6 +17,7 @@ import {
   PhoneIcon,
   PinIcon,
 } from "./site-icons";
+import { SmartLink } from "./smart-link";
 
 type Product = {
   readonly name: string;
@@ -37,13 +39,6 @@ type Testimonial = {
   readonly name: string;
   readonly role: string;
 };
-
-const STATS: readonly { readonly value: string; readonly label: string }[] = [
-  { value: "14", label: "Years of engineering" },
-  { value: "320", label: "Systems installed" },
-  { value: "150", label: "Industrial clients" },
-  { value: "100", label: "Conveyor products" },
-];
 
 const PRODUCTS: readonly Product[] = [
   {
@@ -71,68 +66,20 @@ const PRODUCTS: readonly Product[] = [
       "Reliable gravity and powered roller lines for pallets, cartons, dispatch and accumulation applications.",
   },
   {
-    name: "Chain & Apron Conveyors",
-    kicker: "Chain",
-    href: "/chain-conveyors",
-    image: "/images/apron-conveyor.jpg",
+    name: "I-Beam Conveyor",
+    kicker: "Overhead",
+    href: "/i-beam-conveyor",
+    image: "/images/products/ibeam-curved-track.png",
     description:
-      "Positive-drive handling for heavy, abrasive, hot or irregular loads in demanding plant environments.",
-  },
-  {
-    name: "Screw Conveyors",
-    kicker: "Bulk Handling",
-    href: "/screw-conveyors",
-    image: "/images/coal-handling.jpg",
-    description:
-      "Enclosed conveying for powders, fines, ash and bulk materials where controlled transfer matters.",
-  },
-  {
-    name: "Bucket Elevators",
-    kicker: "Vertical Handling",
-    href: "/bucket-elevators",
-    image: "/images/ash-handling.jpg",
-    description:
-      "Lift bulk materials between process levels with compact, continuous vertical movement.",
-  },
-  {
-    name: "Spiral Conveyors",
-    kicker: "Vertical Flow",
-    href: "/spiral-conveyor",
-    image: "/images/waste-management-plant.jpg",
-    description:
-      "Use vertical space efficiently while maintaining a steady flow between floors and workstations.",
-  },
-  {
-    name: "Telescopic Conveyors",
-    kicker: "Loading",
-    href: "/telescopic-belt-conveyor",
-    image: "/images/belt-conveyor.jpg",
-    description:
-      "Reach into trucks and containers with adjustable loading systems that reduce manual handling.",
-  },
-  {
-    name: "I-Beam Guide Rollers",
-    kicker: "Overhead Components",
-    href: "/sprockets-and-spare-parts",
-    image: "/images/four-wheel-conveyor-2.png",
-    description:
-      "Precision guide rollers for smooth, stable movement through I-beam overhead conveyor routes.",
+      "Robust I-beam overhead conveyors with trolleys, drive and take-up units for smooth, stable movement.",
   },
   {
     name: "Sprockets and Spare Parts",
     kicker: "Conveyor Components",
-    href: "/sprockets-and-spare-parts",
-    image: "/gallery/photo4.jpeg",
+    href: "/sprockets-spare-parts",
+    image: "/images/sprockets-spare-parts.jpg",
     description:
       "Replacement sprockets, trolley components and purpose-built rigging for dependable conveyor service.",
-  },
-  {
-    name: "Turnkey Conveyor Solutions",
-    kicker: "Integrated Systems",
-    href: "/turn-key-solutions",
-    image: "/images/coal-handling.png",
-    description:
-      "Bring layout, fabrication, installation and commissioning together in one coordinated material-flow system.",
   },
 ];
 
@@ -209,11 +156,14 @@ export function HomePage() {
 
       <main id="main-content">
         <section className={styles.hero}>
-          <img
+          <Image
             className={styles.heroImage}
             src="/images/hero.jpg"
             alt="Industrial roller conveyor line inside a manufacturing plant"
-            fetchPriority="high"
+            width={1920}
+            height={750}
+            sizes="100vw"
+            priority
           />
           <div className={styles.heroOverlay} aria-hidden="true" />
           <div className={styles.container}>
@@ -257,42 +207,26 @@ export function HomePage() {
           </div>
         </section>
 
-        <div className={styles.statsWrap}>
-          <div className={styles.container}>
-            <div className={styles.statsBar}>
-              {STATS.map((stat) => (
-                <div className={styles.stat} key={stat.label}>
-                  <span className={styles.statValue}>
-                    {stat.value}
-                    <em>+</em>
-                  </span>
-                  <span className={styles.statLabel}>{stat.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         <section className={styles.section} id="about">
           <div className={`${styles.container} ${styles.aboutGrid}`}>
             <div className={styles.aboutMedia}>
               <div className={styles.aboutFrame} aria-hidden="true" />
-              <img
+              <Image
                 className={styles.aboutImgMain}
                 src="/images/about5.jpg"
                 alt="Automated industrial conveyor system manufactured by Huda Conveyors"
-                loading="lazy"
+                width={800}
+                height={1200}
+                sizes="(max-width: 900px) 90vw, 560px"
               />
-              <img
+              <Image
                 className={styles.aboutImgSmall}
                 src="/images/about6.jpg"
                 alt="Conveyor line installed on a factory floor"
-                loading="lazy"
+                width={800}
+                height={1200}
+                sizes="(max-width: 900px) 40vw, 260px"
               />
-              <div className={styles.aboutBadge}>
-                <strong>14+</strong>
-                <span>Years of engineering</span>
-              </div>
             </div>
 
             <div className={styles.aboutCopy}>
@@ -308,9 +242,8 @@ export function HomePage() {
                 production, assembly and material handling lines.
               </p>
               <p>
-                With more than 14 years of engineering experience, we deliver robust,
-                application-specific conveyors designed around client layouts, production
-                targets and maintenance realities.
+                We deliver robust, application-specific conveyors designed around client
+                layouts, production targets and maintenance realities.
               </p>
               <ul className={styles.checkList}>
                 <li className={styles.checkItem}>
@@ -326,10 +259,10 @@ export function HomePage() {
                   Heavy-duty build quality for continuous, high-load industrial operation.
                 </li>
               </ul>
-              <a className={styles.btnDark} href="/about">
+              <SmartLink className={styles.btnDark} href="/about">
                 More About Us
                 <ArrowIcon />
-              </a>
+              </SmartLink>
             </div>
           </div>
         </section>
@@ -343,35 +276,36 @@ export function HomePage() {
                   Conveyor systems built around <span>your material flow.</span>
                 </h2>
                 <p className={styles.sectionLead}>
-                  Explore our core conveyor families, from overhead routing and bulk handling to
-                  loading systems and complete turnkey material-flow solutions.
+                  Explore our core conveyor families, from overhead and I-beam routing to belt
+                  and roller lines and the spare parts that keep them running.
                 </p>
               </div>
-              <a className={styles.textLink} href="/contact">
+              <SmartLink className={styles.textLink} href="/contact">
                 Discuss your requirements
                 <ArrowIcon />
-              </a>
+              </SmartLink>
             </div>
 
             <div className={styles.productGrid}>
               {PRODUCTS.map((product: Product) => (
                 <article className={styles.productCard} key={product.name}>
                   <div className={styles.productImageBox}>
-                    <img
+                    <Image
                       className={styles.productImage}
                       src={product.image}
                       alt={product.name}
-                      loading="lazy"
+                      width={720}
+                      height={480}
+                      sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 380px"
                     />
                   </div>
                   <div className={styles.productBody}>
                     <span className={styles.productKicker}>{product.kicker}</span>
                     <h3 className={styles.productTitle}>{product.name}</h3>
                     <p className={styles.productDescription}>{product.description}</p>
-                    <a className={styles.productArrow} href={product.href}>
+                    <SmartLink className={styles.productArrow} href={product.href}>
                       View Details
-                      <ArrowIcon />
-                    </a>
+                    </SmartLink>
                   </div>
                 </article>
               ))}
@@ -393,20 +327,6 @@ export function HomePage() {
                 solid fabrication and predictable performance. Our team supports you from the
                 first site survey through to long-term service.
               </p>
-              <div className={styles.capabilitiesStats}>
-                <div>
-                  <strong>14+</strong>
-                  <span>Years in material handling</span>
-                </div>
-                <div>
-                  <strong>320+</strong>
-                  <span>Systems delivered</span>
-                </div>
-                <div>
-                  <strong>150+</strong>
-                  <span>Clients across India</span>
-                </div>
-              </div>
             </div>
 
             <div className={styles.featureGrid}>
@@ -438,12 +358,12 @@ export function HomePage() {
 
             <div className={styles.industryGrid}>
               {INDUSTRIES.map((industry) => (
-                <a className={styles.industryCard} href="/contact" key={industry.name}>
+                <SmartLink className={styles.industryCard} href="/contact" key={industry.name}>
                   <span className={styles.industryIcon}>
                     <img src={industry.icon} alt="" loading="lazy" />
                   </span>
                   <span>{industry.name}</span>
-                </a>
+                </SmartLink>
               ))}
             </div>
           </div>
@@ -486,12 +406,14 @@ export function HomePage() {
         </section>
 
         <section className={styles.cta}>
-          <img
+          <Image
             className={styles.ctaImage}
             src="/images/banner5.jpg"
             alt=""
             aria-hidden="true"
-            loading="lazy"
+            width={1920}
+            height={1080}
+            sizes="100vw"
           />
           <div className={styles.ctaOverlay} aria-hidden="true" />
           <div className={styles.container}>

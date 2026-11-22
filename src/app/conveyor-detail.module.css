@@ -234,7 +234,7 @@
 }
 
 .section {
-  padding: 112px 0;
+  padding: 72px 0;
 }
 
 .sectionTinted {
@@ -276,33 +276,6 @@
   width: 52%;
   height: 220px;
   border: 12px solid var(--detail-white);
-}
-
-.imageNote {
-  position: absolute;
-  bottom: 40px;
-  left: 22px;
-  display: grid;
-  min-width: 142px;
-  padding: 15px 18px;
-  color: var(--detail-white);
-  background: var(--detail-forest);
-}
-
-.imageNote strong {
-  color: var(--detail-green);
-  font-family: "Oswald", "Roboto", sans-serif;
-  font-size: 38px;
-  line-height: 1;
-}
-
-.imageNote span {
-  margin-top: 4px;
-  font-family: "Rajdhani", "Roboto", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
 }
 
 .overviewCopy {
@@ -369,7 +342,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
   align-items: end;
   gap: 40px;
-  margin-bottom: 48px;
+  margin-bottom: 34px;
 }
 
 .sectionHeading > p {
@@ -511,8 +484,117 @@
   line-height: 1.2;
 }
 
+.aboutSection {
+  border-top: 1px solid var(--detail-line);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(40px, 7vw, 96px);
+}
+
+.aboutCopy h2 {
+  margin-top: 18px;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+}
+
+.aboutCopy p {
+  margin-top: 20px;
+  color: var(--detail-muted);
+  font-size: 17px;
+}
+
+.whyPanel {
+  padding: 36px;
+  background: var(--detail-surface);
+  border-left: 4px solid var(--detail-green);
+}
+
+.whyPanel h3 {
+  font-size: 26px;
+}
+
+.whyList {
+  display: grid;
+  gap: 22px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.whyList li {
+  display: flex;
+  gap: 18px;
+}
+
+.whyNumber {
+  flex: none;
+  min-width: 34px;
+  color: var(--detail-green-dark);
+  font-family: "Oswald", "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.whyList strong {
+  display: block;
+  color: var(--detail-ink);
+  font-size: 16px;
+}
+
+.whyList p {
+  margin-top: 4px;
+  color: var(--detail-muted);
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+.relatedSection {
+  padding-top: 0;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.relatedItem {
+  margin: 0;
+}
+
+.relatedFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  padding: 20px;
+  background: var(--detail-surface);
+  border: 1px solid var(--detail-line);
+}
+
+.relatedFrame img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 560px;
+}
+
+.relatedItem figcaption {
+  margin-top: 14px;
+  color: var(--detail-muted);
+  font-family: "Rajdhani", "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .benefitsSection {
-  padding: 0 0 112px;
+  padding: 0 0 72px;
   background: var(--detail-surface);
 }
 
@@ -558,7 +640,7 @@
 }
 
 .ctaSection {
-  padding: 0 0 112px;
+  padding: 0 0 72px;
   background: var(--detail-surface);
 }
 
@@ -643,6 +725,19 @@
 }
 
 @media (max-width: 820px) {
+  .aboutGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .whyPanel {
+    padding: 26px 22px;
+  }
+
+  .relatedGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
   .hero {
     min-height: 680px;
   }
@@ -720,7 +815,7 @@
   }
 
   .section {
-    padding: 76px 0;
+    padding: 48px 0;
   }
 
   .imagePair {
@@ -739,17 +834,6 @@
     border-width: 8px;
   }
 
-  .imageNote {
-    bottom: 28px;
-    left: 10px;
-    min-width: 126px;
-    padding: 12px 14px;
-  }
-
-  .imageNote strong {
-    font-size: 31px;
-  }
-
   .overviewLinkRow {
     align-items: flex-start;
     flex-direction: column;
@@ -757,7 +841,7 @@
 
   .sectionHeading {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .sectionHeading > p {
@@ -789,7 +873,7 @@
 
   .benefitsSection,
   .ctaSection {
-    padding-bottom: 76px;
+    padding-bottom: 48px;
   }
 
   .benefitsPanel,

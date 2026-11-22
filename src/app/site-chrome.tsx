@@ -18,7 +18,11 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         Skip to content
       </a>
       <SiteHeader />
-      <div className={`${styles.innerContent} huda-inner-content`} id="main-content">
+      <div
+        className={`${styles.innerContent} huda-inner-content page-fade`}
+        id="main-content"
+        key={pathname}
+      >
         {children}
       </div>
       <SiteFooter />

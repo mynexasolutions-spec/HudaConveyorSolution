@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SmartLink } from "./smart-link";
 import styles from "./home.module.css";
 import {
   ADDRESS,
@@ -38,7 +38,7 @@ export function SiteHeader() {
 
       <header className={styles.header}>
         <div className={`${styles.container} ${styles.headerInner}`}>
-          <Link className={styles.brand} href="/" aria-label="Huda Conveyors Solution home">
+          <SmartLink className={styles.brand} href="/" aria-label="Huda Conveyors Solution home">
             <img
               className={styles.brandLogo}
               src="/images/logo_fin.png"
@@ -46,29 +46,29 @@ export function SiteHeader() {
               width={152}
               height={76}
             />
-          </Link>
+          </SmartLink>
 
           <nav className={styles.desktopNav} aria-label="Primary">
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <Link className={styles.navLink} href="/">
+                <SmartLink className={styles.navLink} href="/">
                   Home
-                </Link>
+                </SmartLink>
               </li>
               <li className={styles.navItem}>
-                <a className={styles.navLink} href="/about">
+                <SmartLink className={styles.navLink} href="/about">
                   About Us
-                </a>
+                </SmartLink>
               </li>
               <li className={`${styles.navItem} ${styles.hasMenu}`}>
-                <Link className={styles.navLink} href="/#products">
+                <SmartLink className={styles.navLink} href="/#products">
                   Products
                   <ChevronIcon className={styles.chevron} />
-                </Link>
+                </SmartLink>
                 <div className={styles.megaMenu}>
                   <div className={styles.megaGrid}>
                     {PRODUCT_MENU.map((item: MenuLink) => (
-                      <a className={styles.megaItem} href={item.href} key={item.label}>
+                      <SmartLink className={styles.megaItem} href={item.href} key={item.label}>
                         <span className={styles.megaIcon}>
                           <i className={item.icon} aria-hidden="true" />
                         </span>
@@ -76,36 +76,36 @@ export function SiteHeader() {
                           <span className={styles.megaTitle}>{item.label}</span>
                           <span className={styles.megaDesc}>{item.description}</span>
                         </span>
-                      </a>
+                      </SmartLink>
                     ))}
                   </div>
                 </div>
               </li>
               <li className={`${styles.navItem} ${styles.hasMenu}`}>
-                <Link className={styles.navLink} href="/#capabilities">
+                <SmartLink className={styles.navLink} href="/#capabilities">
                   Solutions
                   <ChevronIcon className={styles.chevron} />
-                </Link>
+                </SmartLink>
                 <ul className={styles.dropMenu}>
                   {SOLUTION_MENU.map((item) => (
                     <li key={item.label}>
-                      <a className={styles.dropLink} href={item.href}>
+                      <SmartLink className={styles.dropLink} href={item.href}>
                         {item.label}
                         <span aria-hidden="true">&rarr;</span>
-                      </a>
+                      </SmartLink>
                     </li>
                   ))}
                 </ul>
               </li>
               <li className={styles.navItem}>
-                <a className={styles.navLink} href="/gallery">
+                <SmartLink className={styles.navLink} href="/gallery">
                   Gallery
-                </a>
+                </SmartLink>
               </li>
               <li className={styles.navItem}>
-                <a className={styles.navLink} href="/contact">
+                <SmartLink className={styles.navLink} href="/contact">
                   Contact
-                </a>
+                </SmartLink>
               </li>
             </ul>
           </nav>
@@ -118,9 +118,9 @@ export function SiteHeader() {
                 <strong>{PHONE_DISPLAY}</strong>
               </span>
             </a>
-            <a className={styles.headerCta} href="/contact">
+            <SmartLink className={styles.headerCta} href="/contact">
               Get a Quote
-            </a>
+            </SmartLink>
           </div>
 
           <input
@@ -137,19 +137,19 @@ export function SiteHeader() {
 
           <div className={styles.mobileDrawer}>
             <nav className={styles.mobileNav} aria-label="Mobile">
-              <Link className={styles.mobileLink} href="/">
+              <SmartLink className={styles.mobileLink} href="/">
                 Home
-              </Link>
-              <a className={styles.mobileLink} href="/about">
+              </SmartLink>
+              <SmartLink className={styles.mobileLink} href="/about">
                 About Us
-              </a>
+              </SmartLink>
               <details className={styles.mobileGroup}>
                 <summary>Products</summary>
                 <div className={styles.mobileSub}>
                   {PRODUCT_MENU.map((item: MenuLink) => (
-                    <a href={item.href} key={item.label}>
+                    <SmartLink href={item.href} key={item.label}>
                       {item.label}
-                    </a>
+                    </SmartLink>
                   ))}
                 </div>
               </details>
@@ -157,22 +157,22 @@ export function SiteHeader() {
                 <summary>Solutions</summary>
                 <div className={styles.mobileSub}>
                   {SOLUTION_MENU.map((item) => (
-                    <a href={item.href} key={item.label}>
+                    <SmartLink href={item.href} key={item.label}>
                       {item.label}
-                    </a>
+                    </SmartLink>
                   ))}
                 </div>
               </details>
-              <a className={styles.mobileLink} href="/gallery">
+              <SmartLink className={styles.mobileLink} href="/gallery">
                 Gallery
-              </a>
-              <a className={styles.mobileLink} href="/contact">
+              </SmartLink>
+              <SmartLink className={styles.mobileLink} href="/contact">
                 Contact
-              </a>
+              </SmartLink>
               <div className={styles.mobileActions}>
-                <a className={styles.headerCta} href="/contact">
+                <SmartLink className={styles.headerCta} href="/contact">
                   Get a Quote
-                </a>
+                </SmartLink>
                 <a className={styles.mobilePhone} href={PHONE_HREF}>
                   <PhoneIcon />
                   {PHONE_DISPLAY}

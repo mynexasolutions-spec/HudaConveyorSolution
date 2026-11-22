@@ -1,15 +1,9 @@
 import { pageMetadata } from "../seo-data";
-import { LegacyScripts } from "../legacy-scripts";
-import { readStaticPageHtml } from "../page-html";
+import { ConveyorDetailPage } from "../conveyor-detail-page";
+import { CONVEYOR_DETAILS } from "../conveyor-detail-data";
 
 export const metadata = pageMetadata("inverted-floor-conveyours-towline");
 
 export default function Page() {
-  const html: string = readStaticPageHtml("_inverted-floor-conveyours-towline.html");
-  return (
-    <>
-      <div dangerouslySetInnerHTML={{ __html: html }} suppressHydrationWarning />
-      <LegacyScripts />
-    </>
-  );
+  return <ConveyorDetailPage product={CONVEYOR_DETAILS.towline} />;
 }

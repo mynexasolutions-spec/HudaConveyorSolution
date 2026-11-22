@@ -22,12 +22,12 @@ export const SEO_PAGES: Readonly<Record<string, SeoPage>> = {
   "": {
     title: "Overhead Conveyor Manufacturer in India",
     description:
-      "Huda Conveyors Solution (Anoopshahar, Bulandshahr, UP) manufactures overhead conveyors, belt conveyors, roller conveyors, chain conveyors and turnkey plants with 14+ years of engineering excellence.",
+      "Huda Conveyors Solution (Anoopshahar, Bulandshahr, UP) manufactures overhead conveyors, belt conveyors, roller conveyors, chain conveyors and turnkey plants.",
   },
   about: {
     title: "About Us",
     description:
-      "Huda Conveyors Solution, previously Huda Engineering, has built industrial overhead and floor conveyor systems backed by 14+ years of engineering excellence. Learn about our team and capabilities.",
+      "Huda Conveyors Solution, previously Huda Engineering, has built industrial overhead and floor conveyor systems. Learn about our team and capabilities.",
   },
   gallery: {
     title: "Project Gallery - Conveyor Photos & Videos",
@@ -61,6 +61,8 @@ export const SEO_PAGES: Readonly<Record<string, SeoPage>> = {
   "slat-conveyor": productPage("Slat Conveyor", "slat conveyors for assembly and heavy products"),
   "drag-chain-conveyor": productPage("Drag Chain Conveyor", "drag chain conveyors for bulk and pallet handling"),
   "other-conveyors": productPage("Industrial Conveyor", "screw conveyors, bucket elevators, spiral and chip conveyors"),
+  "i-beam-conveyor": productPage("I-Beam Conveyor", "I-beam overhead conveyors with trolleys, drive units and take-up units"),
+  "sprockets-spare-parts": productPage("Sprockets and Spare Parts", "sprockets, trolleys, chains and rigging for overhead and floor conveyors"),
   "sprockets-and-spare-parts": productPage("Sprockets and Spare Parts", "I-Beam guide rollers, sprockets and conveyor spare parts"),
   "screw-conveyors": productPage("Screw Conveyor", "screw conveyors for powders, grains and bulk material"),
   "bucket-elevators": productPage("Bucket Elevator", "bucket elevators for vertical bulk lifting"),
