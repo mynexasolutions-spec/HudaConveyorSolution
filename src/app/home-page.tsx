@@ -90,12 +90,12 @@ const PRODUCTS: readonly Product[] = [
       "Rugged steel slat conveyors built to carry heavy, hot or awkward components on a solid moving platform.",
   },
   {
-    name: "I-Beam Overhead Conveyor",
+    name: "I-Beam conveyor",
     kicker: "Overhead",
     href: "/i-beam-conveyor",
     image: "/images/enclosed.jpg",
     description:
-      "Heavy-duty overhead I-beam conveyors engineered for continuous component transport through finishing and assembly.",
+      "Heavy-duty I-beam conveyors engineered for continuous component transport through finishing and assembly.",
   },
 ];
 
@@ -304,7 +304,7 @@ export function HomePage() {
 
             <div className={styles.productGrid}>
               {PRODUCTS.map((product: Product) => (
-                <article className={styles.productCard} key={product.name}>
+                <article className={styles.productCard} key={`${product.name}-${product.image}`}>
                   <div className={styles.productImageBox}>
                     <Image
                       className={styles.productImage}
