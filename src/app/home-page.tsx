@@ -69,7 +69,7 @@ const PRODUCTS: readonly Product[] = [
     name: "I-Beam Conveyor",
     kicker: "Overhead",
     href: "/i-beam-conveyor",
-    image: "/images/products/ibeam-curved-track.png",
+    image: "/images/products/ibeam-overhead-track.png",
     description:
       "Robust I-beam overhead conveyors with trolleys, drive and take-up units for smooth, stable movement.",
   },
@@ -80,6 +80,14 @@ const PRODUCTS: readonly Product[] = [
     image: "/images/sprockets-spare-parts.jpg",
     description:
       "Replacement sprockets, trolley components and purpose-built rigging for dependable conveyor service.",
+  },
+  {
+    name: "Slat Conveyor",
+    kicker: "Floor & Chain",
+    href: "/slat-conveyor",
+    image: "/images/products/slat-conveyor.png",
+    description:
+      "Rugged steel slat conveyors built to carry heavy, hot or awkward components on a solid moving platform.",
   },
 ];
 

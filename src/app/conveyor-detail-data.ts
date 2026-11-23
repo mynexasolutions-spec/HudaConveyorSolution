@@ -328,7 +328,7 @@ export const CONVEYOR_DETAILS: Readonly<Record<ConveyorDetailKey, ConveyorDetail
         caption: "I-beam overhead monorail",
       },
       {
-        src: "/images/products/ibeam-curved-track.png",
+        src: "/images/products/ibeam-overhead-track.png",
         alt: "I-beam conveyor band",
         caption: "I-beam conveyor band",
       },
@@ -782,8 +782,8 @@ export const CONVEYOR_DETAILS: Readonly<Record<ConveyorDetailKey, ConveyorDetail
       "Slat conveyors carry heavy or awkward products on a surface of steel or plastic slats fixed to a chain, giving a strong and durable base.",
     image: "/images/apron-conveyor.jpg",
     imageAlt: "Heavy-duty slat and apron conveyor frame",
-    overviewImage: "/images/coal-handling.png",
-    overviewImageAlt: "Heavy-duty conveyor in a plant",
+    overviewImage: "/images/products/slat-conveyor.png",
+    overviewImageAlt: "Red industrial slat conveyor with custom fixtures on a factory assembly floor",
     overviewTitle: "A solid surface for loads a belt cannot carry",
     overview: [
       "Huda Conveyors builds slat conveyors in which flat slats are mounted across one or two chains to form a solid, continuous surface for the load.",
