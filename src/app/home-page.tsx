@@ -89,6 +89,14 @@ const PRODUCTS: readonly Product[] = [
     description:
       "Rugged steel slat conveyors built to carry heavy, hot or awkward components on a solid moving platform.",
   },
+  {
+    name: "I-Beam Overhead Conveyor",
+    kicker: "Overhead",
+    href: "/i-beam-conveyor",
+    image: "/images/enclosed.jpg",
+    description:
+      "Heavy-duty overhead I-beam conveyors engineered for continuous component transport through finishing and assembly.",
+  },
 ];
 
 const FEATURES: readonly Feature[] = [
